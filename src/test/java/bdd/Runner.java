@@ -1,15 +1,14 @@
 package bdd;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
-		features = "src/test/resources/features/login.feature",
+		features = "src/test/java/features/login.feature",
 		glue ="bdd",
-		dryRun=false,
+		//dryRun=true,
 		snippets = SnippetType.CAMELCASE,
-		plugin = {"pretty","html:src/test/resources/reports/report.html"}
+		plugin = {"pretty","html:src/test/java/reports/151124.html"}
 		)
 public class Runner extends AbstractTestNGCucumberTests {
 

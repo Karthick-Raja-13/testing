@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginPage {
 WebDriver driver;
 public void start() {
-	System.setProperty("webdriver.chrome.driver","C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\project_new\\\\src\\\\test\\\\resources\\\\drivers\\\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\eclipse-workspace\\automation2\\src\\test\\resources\\drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.get("https://practicetestautomation.com/practice-test-login/");
 }

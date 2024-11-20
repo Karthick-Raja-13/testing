@@ -2,16 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-13T19:09:13 IST" name="Default suite" finished-at="2024-09-13T19:09:22 IST" duration-ms="8763">
+  <suite started-at="2024-11-15T16:14:58 IST" name="Default suite" finished-at="2024-11-15T16:14:59 IST" duration-ms="1432">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:bdd.Runner@707194ba]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-13T19:09:13 IST" name="Default test" finished-at="2024-09-13T19:09:22 IST" duration-ms="8763">
-      <class name="bdd.Robo">
-        <test-method signature="start()[pri:0, instance:bdd.Robo@662ac478]" started-at="2024-09-13T19:09:13 IST" name="start" finished-at="2024-09-13T19:09:22 IST" duration-ms="8684" status="PASS">
+    <test started-at="2024-11-15T16:14:58 IST" name="Default test" finished-at="2024-11-15T16:14:59 IST" duration-ms="1432">
+      <class name="bdd.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:bdd.Runner@707194ba]" started-at="2024-11-15T16:14:58 IST" name="setUpClass" finished-at="2024-11-15T16:14:59 IST" duration-ms="1152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@677dbd89]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-      </class> <!-- bdd.Robo -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:bdd.Runner@707194ba]" started-at="2024-11-15T16:14:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-15T16:14:59 IST" duration-ms="156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:bdd.Runner@707194ba]" started-at="2024-11-15T16:14:59 IST" name="tearDownClass" finished-at="2024-11-15T16:14:59 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- bdd.Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
